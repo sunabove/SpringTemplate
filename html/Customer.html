@@ -14,11 +14,13 @@
 			<td> firstName </td>
 			<td> lastName </td>
 		</tr>
+		
 		<tr th:each="customer : ${customers}" >
 			<td th:text="${ customer.id }" > &nbsp; </td>
 			<td th:text="${ customer.firstName }" > &nbsp; </td>
 			<td th:text="${ customer.lastName }" > &nbsp; </td>
 		</tr>
+		
 	</table>
 
 </body>
