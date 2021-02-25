@@ -2,11 +2,24 @@
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title> Customers </title>
+<title>Customers</title>
 </head>
 <body>
 
-	<p th:text="${ result }"> -- </p>
+	<p th:text="${ result }">--</p>
+
+	<table>
+		<tr>
+			<td>ID</td>
+			<td> firstName </td>
+			<td> lastName </td>
+		</tr>
+		<tr th:each="customer : ${customers}" >
+			<td th:text="${ customer.id }" > &nbsp; </td>
+			<td th:text="${ customer.firstName }" > &nbsp; </td>
+			<td th:text="${ customer.lastName }" > &nbsp; </td>
+		</tr>
+	</table>
 
 </body>
 </html>
