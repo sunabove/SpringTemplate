@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ko">
+
+<head th:replace="021_layout_html_head.html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FDW HTML Template </title>
+    <meta name="description" content="" />
+    <link rel="icon" href="../rsc/psdr-custom/img/favicon.ico" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="../rsc/psdr-custom/img/favicon.ico" type="image/x-icon" />
+
+    <link href="../rsc/bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
+    <link href="../rsc/bootstrap-theme/theme.css" rel="stylesheet">
+    <link href="../rsc/bootstrap-theme/template.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav th:replace="022_layout_header.html :: header_01" class="navbar fixed-top navbar-expand-lg bg-primary text-center p-0 ">
+
+        <div class="container justify-content-center text-nowrap">
+            <div class="row">
+                <div class="col">
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">
+                                    <a class="text-muted" href="#">
+                                        <img src="../rsc/psdr-custom/img/logo_001_procom.png" alt="logo">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="text-muted" href="#">
+                                        <p class="display-4 font-weight-bold d-inline-block mb-0 align-center pl-2" style="color:#083358">FDW</p>
+                                    </a>
+                                    &nbsp;
+                                </td>
+                                <td></td>
+
+                                <td class="text-left">
+                                    <img src="../rsc/psdr-custom/img/logo_002_psdr.png" alt="name_img" style="height: 20px;">
+                                    <br/>
+                                    <img src="../rsc/psdr-custom/img/logo_003_fdw.png" alt="name_img" style="height: 22px;">
+                                </td>
+                                <td>
+                                    &nbsp;
+                                    <a class="text-muted" href="#">
+                                        <img src="../rsc/psdr-custom/img/product.png" alt="product" style="height: 65px;">
+                                    </a>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <nav th:replace="022_layout_header.html :: header_02" class="navbar fixed-top navbar-expand-lg bg-light p-0 pt-1 " style="margin-top: 68px">
+
+        <div class="container justify-content-center p-0">
+            <div class="row">
+                <div class="col">
+                    <table class="text-nowrap" style="vertical-align: center; margin-top: 8px;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5 class=" font-weight-bold text-primary p-0 m-0"> 경기지역본부 </h5>
+
+                                </td>
+                                <td>
+                                    <h5 class="card-title text-dark font-weight-bold p-0 mb-0">
+                                        &nbsp;성남전력지사 &nbsp;&nbsp;
+                                    </h5>
+                                </td>
+
+                                <td class="text-left">
+                                    <h6 class="card-body p-0 m-0 text-dark">
+                                        <i class="far fa-clock"></i> &nbsp;
+                                        <span>2018-07-25 14:25</span>
+                                    </h6>
+                                </td>
+                                <td class="text-left">
+                                    <h6 class="card-body p-0 m-0 text-dark">
+                                        <i class="far fa-user"></i> &nbsp; 접속자 :
+                                        <span>1,234</span>명
+                                    </h6>
+                                </td>
+                                <td class="text-left">
+                                    <h6 class="card-body p-0 m-0 text-dark">
+                                        <i class="fa fa-download"></i> &nbsp; 다운로드 :
+                                        <span>2,345</span>건
+                                    </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center">
+                                    <h3 class="card-title text-warning font-weight-bold mb-0 "> 154kV 중원 변전소 &nbsp;</h3>
+                                </td>
+                                <td colspan="2" class="text-left">
+                                    <h6 class="card-body p-0 m-0">
+                                        <i class="far fa-bell "></i>
+                                        &nbsp; 공지사항 :
+                                        <span>사용자 정보 보호 정책이 변경되었습니다.</span>
+                                    </h6>
+                                </td>
+                                <td class="text-right">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="far fa-user"></i>
+                                        <span>접속 아이디</span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDd">
+                                        <a class="dropdown-item" href="#">로그 아웃</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">사용자 정보</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <main style="margin-top: 120px; margin-bottom: 50px;">
+
+        <section class="container">
+
+            <div class="row bg-info rouded">
+                <div class="col-5">
+                    <a class="navbar-brand font-weight-bold text-dark " href="#">
+                        <i class="fas fa-bars d-inline-block"></i>&nbsp;
+                        <p class="m-0 pt-1  d-inline-block">시스템 설정</p>
+                    </a>
+                </div>
+                <div class="col-7">
+
+                </div>
+            </div>
+
+            <!-- 이미지 추가 S-->
+            <div>
+                <img th:src="${sysBgImg_01} ? @{/file/sys/SYS_BG_IMG_01} : @{/rsc/psdr-custom/img/slider.jpg}" 
+                    class="img-fluid rounded mx-auto my-3 d-block img-thumbnail" 
+                    src="../rsc/psdr-custom/img/slider.jpg" 
+                    alt="타이틀 이미지" 
+                    />
+            </div>
+            <!-- 이미지 추가 E-->
+
+            <div class="row my-4">
+                <div class="col-8">
+                    <img th:src="${sysBgImg_02} ? @{/file/sys/SYS_BG_IMG_02} : @{/rsc/psdr-custom/img/slider1.png}" 
+                        class="m-auto img-thumbnail w-100" 
+                        src="../rsc/psdr-custom/img/slider1.png" 
+                        alt="배경 화면 이미지" 
+                    />
+                </div>
+                <div class="col-4 my-auto m-auto">
+                    <div class="row">
+
+                        <div class="col-12 card flex-md-row mb-1 shadow-sm h-md-250 bg-light p-0 copyable">
+                            <div class="card-body d-flex flex-column ">
+                                <form method="POST" enctype="multipart/form-data" >
+                                    <div class="form-group copyable m-0 ">
+                                        &nbsp;
+                                        <i class="fas fa-file-image text-primary"></i> &nbsp;
+                                        <label class="text-primary"> 타이틀 그림 </label>
+                                        <br/>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"> 업로드 </span>
+                                            </div>
+                                            <div class="custom-file">
+                                                <input 
+                                                    name="sys_bg_img_01_file" 
+                                                    id="sys_bg_img_01_file" 
+                                                    type="file" 
+                                                    accept=".png, .jpg, .jpeg"
+                                                    class="custom-file-input" 
+                                                />
+                                                <label
+                                                    id="sys_bg_img_01_file_label" 
+                                                    class="custom-file-label"
+                                                >
+                                                    그림 선택
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="input-group justify-content-center">
+                                            <button class="btn btn-primary" 
+                                                id="sys_bg_img_01_file_apply"
+                                                disabled 
+                                                type="submit" 
+                                            >
+                                                <i class="fas fa-check"></i>&nbsp; 적용
+                                            </button> 
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-12 card flex-md-row mb-1 shadow-sm h-md-250 bg-light p-0 copyable">
+                            <div class="card-body d-flex flex-column ">
+                                <form  method="POST" enctype="multipart/form-data">
+                                    <div class="form-group copyable m-0 ">
+                                        &nbsp;
+                                        <i class="fas fa-file-image text-primary"></i> &nbsp;
+                                        <label class="text-primary"> 배경 그림 </label>
+                                        <br/>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"> 업로드 </span>
+                                            </div>
+                                            <div class="custom-file">
+                                                <input 
+                                                    name="sys_bg_img_02_file" 
+                                                    id="sys_bg_img_02_file" 
+                                                    type="file" 
+                                                    accept=".png, .jpg, .jpeg"
+                                                    class="custom-file-input" 
+                                                />
+                                                <label 
+                                                    id="sys_bg_img_02_file_label"
+                                                    class="custom-file-label"
+                                                >
+                                                    그림 선택
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="input-group justify-content-center">
+                                            <button class="btn btn-primary" 
+                                                id="sys_bg_img_02_file_apply"
+                                                disabled 
+                                                type="submit"
+                                            >
+                                                <i class="fas fa-check"></i>&nbsp; 적용
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-12 card flex-md-row mb-4 shadow-sm h-md-250 bg-light p-0 copyable">
+                            <div class="card-body d-flex flex-column ">
+                                <form>
+                                    <div class="input-group mb-2">
+                                        <button class="btn btn-primary " type="button">
+                                            <i class="fas fa-edit"></i>&nbsp; 지역본부
+                                        </button>
+                                        <input th:value="${ sysName_01_txt }" id="sysName_01" name="sysName_01" type="text" class="form-control pr-2 " placeholder="지역본부"
+                                        />
+                                    </div>
+                                    <div class="input-group mb-2">
+                                        <button class="btn btn-primary " type="button">
+                                            <i class="fas fa-edit"></i>&nbsp; 전력지사
+                                        </button>
+                                        <input th:value="${ sysName_02_txt }" id="sysName_02" name="sysName_02" type="text" class="form-control pr-2 " placeholder="전력지사"
+                                        />
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <button class="btn btn-primary " type="button">
+                                            <i class="fas fa-edit"></i>&nbsp; 변전소명
+                                        </button>
+                                        <input th:value="${ sysName_03_txt }" id="sysName_03" name="sysName_03" type="text" class="form-control pr-2 " placeholder="변전소명 "
+                                        />
+                                    </div>
+                                    <div class="input-group ">
+                                        <span class="input-group-btn pl-1 m-auto">
+                                            <button class="btn btn-primary " type="submit">
+                                                <i class="fas fa-check"></i>&nbsp; 저장
+                                            </button>
+                                            <button th:if="${ false }" class="btn btn-secondary" type="submit" id="cancel_names" name="cancel_names">
+                                                <i class="fas fa-redo-alt "></i> &nbsp; 취소
+                                            </button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer th:replace="024_layout_footer.html" class="bg-dark text-center">
+
+        <div class="container py-3 text-center text-nowrap">
+            <div class="row text-nowrap">
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-home"></i>
+                        &nbsp; 소개
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        &nbsp; 제품소개</a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-user-secret"></i>
+                        &nbsp; 개인정보취급방침</a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-newspaper"></i>
+                        &nbsp; 게시판</a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-sitemap"></i>
+                        &nbsp; 사이트맵</a>
+                </div>
+            </div>
+
+            <div class="row text-nowrap mt-2">
+                <div class="col small">
+                    <span>
+                        <i class="fas fa-phone"></i>&nbsp; 전화 : 042-253-7007 &nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <i class="fas fa-fax"></i>&nbsp; 팩스 : 042-253-7009 &nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <i class="fas fa-envelope"></i>&nbsp; 메일 : procom@procom.co.kr &nbsp;&nbsp;
+                    </span>
+                    <p class="copyright mt-1"> ⓒ (주)프로컴시스템 All Rights Reserved. </p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div th:replace="020_layout_common.html :: footer_include_01">
+        <!-- Bootstrap core JavaScript -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../rsc/jquery/jquery-3.3.1.min.js"></script>
+
+        <script src="../rsc/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    </div>
+
+    <script>
+        $( "#sys_bg_img_01_file" ).change(function() {
+            var fileName = $( this ).val();
+            fileName = fileName.split( "\\" );
+            fileName = fileName[ fileName.length - 1 ]
+            fileName = fileName.split( "/" );
+            fileName = fileName[ fileName.length - 1 ]
+            $( "#sys_bg_img_01_file_label" ).html( fileName );
+            $( "#sys_bg_img_01_file_apply" ).attr( "disabled" , 0 > fileName.length );
+        });
+
+        $( "#sys_bg_img_02_file" ).change(function() {
+            var fileName = $( this ).val();
+            fileName = fileName.split( "\\" );
+            fileName = fileName[ fileName.length - 1 ]
+            fileName = fileName.split( "/" );
+            fileName = fileName[ fileName.length - 1 ]
+            $( "#sys_bg_img_02_file_label" ).html( fileName );
+            $( "#sys_bg_img_02_file_apply" ).attr( "disabled" , 0 > fileName.length );
+        });
+    </script>
+
+</body>
+
+</html>

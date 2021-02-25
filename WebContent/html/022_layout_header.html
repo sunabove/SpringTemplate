@@ -1,0 +1,205 @@
+
+<nav th:fragment="header_01" class="navbar fixed-top navbar-expand-lg bg-primary text-center p-0">
+
+    <div class="container justify-content-center text-nowrap">
+        <table style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td class="align-middle">
+                            <a th:href="@{/main/main.html}" 
+                                class="text-muted" href="#" 
+                                title="홈페이지 메인 화면으로 이동합니다."
+                            >
+                                <img src="../rsc/psdr-custom/img/logo_001_procom.png" alt="logo" />
+                            </a>
+                        </td>
+                        <td>
+                            <a th:href="@{/main/main.html}" class="text-muted" href="#">
+                                <p class="display-4 font-weight-bold d-inline-block mb-0 align-center pl-2" style="color:#083358">FDW</p>
+                            </a>
+                            &nbsp;
+                        </td>
+                        <td></td>
+
+                        <td class="text-left">
+                            <img src="../rsc/psdr-custom/img/logo_002_psdr.png" alt="name_img" style="height: 20px;" />
+                            <br/>
+                            <img src="../rsc/psdr-custom/img/logo_003_fdw.png" alt="name_img" style="height: 22px;" />
+                        </td>
+                        <td>
+                            &nbsp;
+                            <a th:href="@{/gen/about.html}" 
+                                class="text-muted" href="#" 
+                                title="제품 소개 화면으로 이동합니다."
+                            >
+                                <img th:src="@{ /rsc/psdr-custom/img/product.png }" 
+                                    src="../rsc/psdr-custom/img/product.png" 
+                                    style="height: 62px;" 
+                                />
+                            </a>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+    </div>
+
+</nav>
+
+<nav th:fragment="header_02" class="navbar fixed-top navbar-expand-lg bg-light p-0 pt-1" style="margin-top: 68px">
+
+    <div class="container justify-content-center text-center ">
+
+        <table class="justify-content-center text-center text-nowrap" style="vertical-align: center; margin-top: 8px;">
+            <colgroup>
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="100" />
+                <col width="" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td>
+                        <h5 th:text="${ session.sysName_01.value }" 
+                            class="font-weight-bold text-primary p-0 m-0"
+                            title="지역본부"
+                        > 
+                            경기지역본부 
+                        </h5>
+                    </td>
+
+                    <td>
+                        <h5 class="card-title text-dark font-weight-bold p-0 mb-0">
+                            &nbsp;
+                            <span th:text="${ session.sysName_02.value }"
+                                title="전력지사"
+                            >
+                                성남전력지사
+                            </span>
+                            &nbsp;&nbsp;
+                        </h5>
+                    </td>
+
+                    <td class="text-left">
+                        <h6 class="card-body p-0 m-0 text-dark" title="현재 시각" >
+                            <i class="far fa-clock"></i> &nbsp;
+                            <span th:text="${ #dates.format(#dates.createNow(),'YYYY-MM-dd HH:mm') }" >
+                                2018-07-25 14:25 
+                            </span>
+                            &nbsp;&nbsp;
+                        </h6>
+                    </td>
+
+                    <td>
+                        <h6 class="card-body p-0 m-0 text-dark" title="접속 건수" >
+                            <span th:if="0">
+                                <i class="far fa-user"></i> &nbsp;  
+                            
+                                전체 :&nbsp; 
+                                <span th:text="${ totConnUserNo.getValueFormat() }" >
+                                    1,234,567
+                                </span>
+                                &nbsp;명
+                                &nbsp;&nbsp;
+                                오늘 :
+                                <span th:text="${ todayConnUserNo.getValueFormat() }" >
+                                    1,234
+                                </span>
+                                &nbsp;명
+                                &nbsp;&nbsp;
+                            </span>
+                            <span th:if="1">
+                                <i class="far fa-user"></i> &nbsp;  
+                                현재 :
+                                <span th:text="${ #numbers.formatInteger( application.sessionCounter, 0,'COMMA' ) }" >
+                                    1,234
+                                </span>
+                                &nbsp;명
+                                &nbsp;&nbsp;
+                            </span>
+                        </h6>
+                    </td>
+
+                    <td class="text-left">
+                        <h6 class="card-body p-0 m-0 text-dark" title="다운로드 건수" > 
+                            <i class="fa fa-download"></i> 
+                            &nbsp; 
+                            전체 :&nbsp; 
+                            <span th:text="${ totDownNo.getValueFormat() }" style="min-width: 100px;" >
+                                1,234,567
+                            </span>
+                            &nbsp;건
+                            &nbsp;&nbsp;
+                            오늘 :
+                            <span th:text="${ #numbers.formatInteger( todayDownNo.downloadCount, 0,'COMMA' )  }"
+                                style="min-width: 100px;" 
+                            >
+                                2,345
+                            </span>
+                            &nbsp;건
+                        </h6>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="text-center">
+                        <h3 class="card-title text-warning font-weight-bold mb-0 " >
+                            <span th:text="${ session.sysName_03.value }" title="변전소명" >
+                                154kV 중원 변전소
+                            </span>&nbsp;
+                        </h3>
+                    </td>
+                    <td colspan="2" class="text-left">
+                        <h6 class="card-body p-0 m-0">
+                            <i class="far fa-bell "></i>
+                            &nbsp; 
+                            <a th:href="@{/article/view.html?id=__${ noticeArticle.articleId }__ }" 
+                                th:title="${ noticeArticle } ? ${ noticeArticle.title } : '홈 페이지 오픈' " 
+                                class="text-muted" 
+                                href="#"
+                            >
+                                공지사항 :
+                                <span th:text="${ noticeArticle } ? ${ noticeArticle.getTitleFormat( 32 ) } : '홈 페이지 오픈' " 
+                                    style="white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis; width: 100%; max-width: 320px; "
+                                >
+                                    홈페이지가 오픈되었습니다.
+                                </span>
+                            </a>
+                        </h6>
+                    </td>
+
+                    <td th:if="${ loginUser_id }" class="text-right">
+                        <a class="nav-link dropdown-toggle" href="#" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        >
+                            <i class="far fa-user" title="로그인 아이디"></i>&nbsp;
+                            <span th:text="${ loginUser_id }" title="클릭하면 상세 메뉴가 나타납니다." >
+                                접속 아이디
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" >
+                            <a th:href="@{/user/logout.html}" class="dropdown-item" href="#" >
+                                <i class="fa fa-arrow-alt-circle-right"></i> &nbsp;&nbsp; 로그 아웃
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a th:href="@{/user/info.html}" class="dropdown-item" href="#">
+                                <i class="fa fa-user-tag "></i> &nbsp; 사용자 정보
+                            </a>
+                            <div th:if="${ loginUser.isAdmin() }" class="dropdown-divider"></div>
+                            <a th:if="${ loginUser.isAdmin() }" th:href="@{/sys/setting.html}" class="dropdown-item" href="#">
+                                <i class="fa fa-bell "></i> &nbsp;&nbsp; 시스템 설정
+                            </a>
+                            <a th:if="${ loginUser.isAdmin() }" th:href="@{/user/manage.html}" class="dropdown-item" href="#">
+                                <i class="fa fa-user-friends "></i> &nbsp;&nbsp; 사용자 관리
+                            </a>                                    
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>    
+
+</nav>

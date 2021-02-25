@@ -1,0 +1,381 @@
+<!doctype html>
+
+<html lang="ko">
+
+<head th:replace="021_layout_html_head.html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FDW HTML Template </title>
+    <meta name="description" content="" />
+    <link rel="icon" href="../rsc/psdr-custom/img/favicon.ico" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="../rsc/psdr-custom/img/favicon.ico" type="image/x-icon" />
+
+    <link href="../rsc/bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
+    <link href="../rsc/bootstrap-theme/theme.css" rel="stylesheet">
+    <link href="../rsc/bootstrap-theme/template.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav th:replace="022_layout_header.html :: header_01" class="navbar fixed-top navbar-expand-lg bg-primary text-center p-0 ">
+
+        <div class="container justify-content-center text-nowrap">
+            <div class="row">
+                <div class="col">
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">
+                                    <a class="text-muted" href="#">
+                                        <img src="../rsc/psdr-custom/img/logo_001_procom.png" alt="logo">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="text-muted" href="#">
+                                        <p class="display-4 font-weight-bold d-inline-block mb-0 align-center pl-2" style="color:#083358">FDW</p>
+                                    </a>
+                                    &nbsp;
+                                </td>
+                                <td></td>
+
+                                <td class="text-left">
+                                    <img src="../rsc/psdr-custom/img/logo_002_psdr.png" alt="name_img" style="height: 20px;">
+                                    <br/>
+                                    <img src="../rsc/psdr-custom/img/logo_003_fdw.png" alt="name_img" style="height: 22px;">
+                                </td>
+                                <td>
+                                    &nbsp;
+                                    <a class="text-muted" href="#">
+                                        <img src="../rsc/psdr-custom/img/product.png" alt="product" style="height: 65px;">
+                                    </a>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <nav th:replace="022_layout_header.html :: header_02" class="navbar fixed-top navbar-expand-lg bg-light p-0 pt-1 " style="margin-top: 68px">
+
+        <div class="container justify-content-center p-0">
+            <div class="row">
+                <div class="col">
+                    <table class="text-nowrap" style="vertical-align: center; margin-top: 8px;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5 class=" font-weight-bold text-primary p-0 m-0"> 경기지역본부 </h5>
+
+                                </td>
+                                <td>
+                                    <h5 class="card-title text-dark font-weight-bold p-0 mb-0">
+                                        &nbsp;성남전력지사 &nbsp;&nbsp;
+                                    </h5>
+                                </td>
+
+                                <td class="text-left">
+                                    <h6 class="card-body p-0 m-0 text-dark">
+                                        <i class="far fa-clock"></i> &nbsp;
+                                        <span>2018-07-25 14:25</span>
+                                    </h6>
+                                </td>
+                                <td class="text-left">
+                                    <h6 class="card-body p-0 m-0 text-dark">
+                                        <i class="far fa-user"></i> &nbsp; 접속자 :
+                                        <span>1,234</span>명
+                                    </h6>
+                                </td>
+                                <td class="text-left">
+                                    <h6 class="card-body p-0 m-0 text-dark">
+                                        <i class="fa fa-download"></i> &nbsp; 다운로드 :
+                                        <span>2,345</span>건
+                                    </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center">
+                                    <h3 class="card-title text-warning font-weight-bold mb-0 "> 154kV 중원 변전소 &nbsp;</h3>
+                                </td>
+                                <td colspan="2" class="text-left">
+                                    <h6 class="card-body p-0 m-0">
+                                        <i class="far fa-bell "></i>
+                                        &nbsp; 공지사항 :
+                                        <span>사용자 정보 보호 정책이 변경되었습니다.</span>
+                                    </h6>
+                                </td>
+                                <td class="text-right">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="far fa-user"></i>
+                                        <span>접속 아이디</span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDd">
+                                        <a class="dropdown-item" href="#">로그 아웃</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">사용자 정보</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <form method="POST" >
+
+        <main>
+
+            <section class="container" style=" margin-top:150px; margin-bottom: 50px;">
+
+                <div class="row bg-info rouded">
+                    <div class="col-5">
+                        <a th:href="@{ /data/list.html }" class="navbar-brand font-weight-bold text-dark " href="#">
+                            <i class="fas fa-bars d-inline-block"></i>&nbsp;
+                            <p class="m-0 pt-1  d-inline-block">
+                                공지사항
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-7">
+                        <div class="input-group my-2">
+                            <ul class="mr-auto">
+                            </ul>
+                            <a  th:if="${ article.articleId }"
+                                th:href="@{ /article/view.html }"
+                                href="#" class="btn btn-primary " role="button" aria-pressed="true"
+                            >
+                                <i class="fa fa-edit"></i>&nbsp;
+                                글쓰기
+                            </a>
+                            &nbsp;&nbsp;
+                            <button th:if="${ articlePrev }" 
+                                class="btn btn-sm btn-outline-dark" 
+                            >
+                                <a th:href="@{ '/article/view.html?id=' + ${articlePrev.articleId} }" 
+                                    href="#" class="text-muted" 
+                                >
+                                    <i class="fas fa-angle-left pr-2"></i>
+                                    이전글
+                                </a>
+                            </button>
+                            &nbsp;
+                            <button th:if="${ articleNext }" 
+                                class="btn btn-sm btn-outline-dark"
+                            >
+                                <a th:href="@{ '/article/view.html?id=' + ${articleNext.articleId} }" 
+                                    href="#" class="text-muted" 
+                                >
+                                    다음글
+                                    <i class="fas fa-angle-right pl-2"></i>
+                                </a>
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-dark">
+                                <a th:href="@{ /article/list.html }" href="#">
+                                    <i class="fas fa-bars pr-2" style="color: #fff"></i>
+                                    목록
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-4">
+                    <div class="col">
+                        <div class="table-responsive">
+                            <table class="table table-hover-no table-sm text-nowrap ">
+                                <colgroup>
+                                    <col width="100" />
+                                    <col width="" />
+                                    <col width="180" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <label class="text-muted">
+                                                &nbsp;
+                                                <i class="fas fa-dot-circle pr-2 text-primary"></i>
+                                                제목
+                                            </label>
+                                        </th>
+
+                                        <th>
+                                            <input th:value="${ article.title }" th:readonly="${ article.isReadonly( req ) }" name="article_title" class="form-control "
+                                                type="text" required="" value="시스템 파일 업로드" />
+                                        </th>
+                                        <th>
+                                            <div th:if="${ isAdmin && article.isUpdatable( req ) }" 
+                                                class="custom-control custom-checkbox mb-1">
+                                                <input 
+                                                    th:checked="${ article.notice }"
+                                                    name="article_notice" id="article_notice" 
+                                                    type="checkbox" class="custom-control-input" 
+                                                />
+                                                <label class="custom-control-label" for="article_notice">
+                                                    공지사항
+                                                </label>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            &nbsp;
+                                            <label class="text-muted">
+                                                <i class="fas fa-dot-circle pr-2 text-primary"></i>
+                                                작성자
+                                            </label>
+                                        </th>
+                                        <th>
+                                            <input th:value="${ article.getWriterId() }" class="form-control " style="max-width: 200px;" type="text" required="" readonly
+                                                value="sunabove" />
+                                        </th>
+                                        <th>
+                                            <input th:value="${ #dates.format( article.saveDt, 'yyyy-MM-dd hh:mm:ss') }" class="form-control" style="max-width: 170px;"
+                                                type="text" required="" readonly value="2018-07-27 12:33:40" />
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="100%">
+                                            <div class="form-group">
+                                                <textarea th:text="${ article.content }" th:readonly="${ article.isReadonly( req ) }" name="article_content" class="form-control text-left"
+                                                    rows="20">
+                                                    본문: 옛날에 활동했던 미니 입니다.잘들 …..
+                                                </textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="100%" class="text-center">
+                                            &nbsp;
+                                            <button th:if="${ article.isUpdatable( req ) }" id="save-cmd" class="btn btn-primary " type="button">
+                                                <i class="fa fa-save pr-2 "></i>
+                                                저장
+                                            </button>
+                                            <button th:if="${ article.isCancellable( req ) }" id="cancel-cmd" class="btn btn-secondary" type="button">
+                                                <i class="fas fa-redo-alt pr-2 text-dark"></i>
+                                                취소
+                                            </button>
+                                            <button th:if="${ article.isDeletable( req ) }" id="delete-cmd" class="btn btn-secondary" type="button">
+                                                <i class="fas fa-times pr-2 text-dark"></i>
+                                                삭제
+                                            </button>
+                                            &nbsp;
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <input type="hidden" name="article_id" value="" th:value="${ article.articleId }" />
+        <input type="hidden" name="cmd" value="" />
+
+    </form>
+
+    <footer th:replace="024_layout_footer.html" class="bg-dark text-center">
+
+        <div class="container py-3 text-center text-nowrap">
+            <div class="row text-nowrap">
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-home"></i>
+                        &nbsp; 소개
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        &nbsp; 제품소개</a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-user-secret"></i>
+                        &nbsp; 개인정보취급방침</a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-newspaper"></i>
+                        &nbsp; 게시판</a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-sitemap"></i>
+                        &nbsp; 사이트맵</a>
+                </div>
+            </div>
+
+            <div class="row text-nowrap mt-2">
+                <div class="col small">
+                    <span>
+                        <i class="fas fa-phone"></i>&nbsp; 전화 : 042-253-7007 &nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <i class="fas fa-fax"></i>&nbsp; 팩스 : 042-253-7009 &nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <i class="fas fa-envelope"></i>&nbsp; 메일 : procom@procom.co.kr &nbsp;&nbsp;
+                    </span>
+                    <p class="copyright mt-1"> ⓒ (주)프로컴시스템 All Rights Reserved. </p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div th:replace="020_layout_common.html :: footer_include_01">
+        <!-- Bootstrap core JavaScript -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../rsc/jquery/jquery-3.3.1.min.js"></script>
+
+        <script src="../rsc/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    </div>
+
+    <script>
+        $("#cancel-cmd").click(function () {
+            window.location.href = "list.html";
+        });
+
+        $("#delete-cmd").click(function () {
+            $("form input[name=cmd]").val("delete");
+            $("form").submit();
+        });
+
+        $("#save-cmd").click(function () {
+            $("form input[name=cmd]").val("save");
+            $("form").submit();
+        });
+    </script>
+
+</body>
+
+</html>

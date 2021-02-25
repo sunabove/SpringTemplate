@@ -1,0 +1,396 @@
+<!doctype html>
+
+<html lang="ko">
+
+<head th:replace="021_layout_html_head.html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고장 데이터 목록</title>
+    <meta name="description" content="" />
+    <link rel="icon" href="../rsc/psdr-custom/img/favicon.ico" type="image/x-icon" />
+
+    <link rel="shortcut icon" href="../rsc/psdr-custom/img/favicon.ico" type="image/x-icon" />
+
+    <link href="../rsc/bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
+    <link href="../rsc/bootstrap-theme/theme.css" rel="stylesheet">
+    <link href="../rsc/bootstrap-theme/template.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav th:replace="022_layout_header.html :: header_01" class="navbar fixed-top navbar-expand-lg bg-primary text-center p-0 ">
+
+        <div class="container justify-content-center text-nowrap">
+            <div class="row">
+                <div class="col">
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">
+                                    <a class="text-muted" href="#">
+                                        <img src="../rsc/psdr-custom/img/logo_001_procom.png" alt="logo">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a class="text-muted" href="#">
+                                        <p class="display-4 font-weight-bold d-inline-block mb-0 align-center pl-2" style="color:#083358">FDW</p>
+                                    </a>
+                                    &nbsp;
+                                </td>
+                                <td></td>
+
+                                <td class="text-left">
+                                    <img src="../rsc/psdr-custom/img/logo_002_psdr.png" alt="name_img" style="height: 20px;">
+                                    <br/>
+                                    <img src="../rsc/psdr-custom/img/logo_003_fdw.png" alt="name_img" style="height: 22px;">
+                                </td>
+                                <td>
+                                    &nbsp;
+                                    <a class="text-muted" href="#">
+                                        <img src="../rsc/psdr-custom/img/product.png" alt="product" style="height: 65px;">
+                                    </a>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <nav th:replace="022_layout_header.html :: header_02" class="navbar fixed-top navbar-expand-lg bg-light p-0 pt-1 " style="margin-top: 68px">
+
+        <div class="container justify-content-center p-0">
+            <div class="row">
+                <div class="col">
+                    <table class="text-nowrap" style="vertical-align: center; margin-top: 8px;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5 class=" font-weight-bold text-primary p-0 m-0"> 경기지역본부 </h5>
+
+                                </td>
+                                <td>
+                                    <h5 class="card-title text-dark font-weight-bold p-0 mb-0">
+                                        &nbsp;성남전력지사 &nbsp;&nbsp;
+                                    </h5>
+                                </td>
+
+                                <td class="text-left">
+                                    <h6 class="card-body p-0 m-0 text-dark">
+                                        <i class="far fa-clock"></i> &nbsp;
+                                        <span>2018-07-25 14:25</span>
+                                    </h6>
+                                </td>
+                                <td class="text-left">
+                                    <h6 class="card-body p-0 m-0 text-dark">
+                                        <i class="far fa-user"></i> &nbsp; 접속자 :
+                                        <span>1,234</span>명
+                                    </h6>
+                                </td>
+                                <td class="text-left">
+                                    <h6 class="card-body p-0 m-0 text-dark">
+                                        <i class="fa fa-download"></i> &nbsp; 다운로드 :
+                                        <span>2,345</span>건
+                                    </h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center">
+                                    <h3 class="card-title text-warning font-weight-bold mb-0 "> 154kV 중원 변전소 &nbsp;</h3>
+                                </td>
+                                <td colspan="2" class="text-left">
+                                    <h6 class="card-body p-0 m-0">
+                                        <i class="far fa-bell "></i>
+                                        &nbsp; 공지사항 :
+                                        <span>사용자 정보 보호 정책이 변경되었습니다.</span>
+                                    </h6>
+                                </td>
+                                <td class="text-right">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="far fa-user"></i>
+                                        <span>접속 아이디</span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDd">
+                                        <a class="dropdown-item" href="#">로그 아웃</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">사용자 정보</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <form>
+
+        <main style="margin-top: 90px;">
+
+            <section class="container">
+
+                <!-- 이미지 추가 S-->
+                <div class="row">
+                    <div class="col">
+                        <img th:src="${sysBgImg_01} ? @{/file/sys/SYS_BG_IMG_01} : @{/rsc/psdr-custom/img/slider.jpg}" src="../rsc/psdr-custom/img/slider.jpg"
+                            alt="타이틀 이미지" class="img-fluid rounded mx-auto my-3 d-block img-thumbnail" />
+                    </div>
+                </div>
+                <!-- 이미지 추가 E-->
+
+                <div class="row bg-info rouded">
+                    <div class="col-5">
+                        <a th:href="@{ /data/list.html }" class="navbar-brand font-weight-bold text-dark " href="#">
+                            <i class="fas fa-bars d-inline-block"></i>&nbsp;
+                            <p class="m-0 pt-1  d-inline-block">고장데이터 다운로드</p>
+                        </a>
+                    </div>
+                    <div class="col-7">
+                        <div class="input-group my-2">
+                            <ul class="mr-auto">
+                            </ul>
+                            <div th:if="0"class="dropdown pr-2">
+                                <div class="input-group date">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="far fa-calendar-alt pr-1"></i>
+                                        </div>
+                                    </div>
+                                    <input th:value="${ param.search_date }" name="search_date" type="text" class="form-control date_picker" placeholder="날짜"
+                                        style="max-width: 110px;" value="" />
+                                </div>
+                            </div>
+                            <button id="srch_btn" class="btn btn-primary my-2 my-sm-0" type="submit">
+                                <i class="fas fa-search"></i>
+                                &nbsp; 검색
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-4 ">
+
+                    <div class="col p-0">
+                        <div class="text-primary">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a th:classappend="${gubun_code == 'Comtrade'} ? active : _ " th:gubun_code="Comtrade" class="nav-link data_tab" href="#">
+                                        &nbsp;
+                                        <i class="fas fa-file-medical-alt h5"></i> &nbsp;
+                                        <p class="d-inline-block"> Comtrade Data File </p>
+                                    </a>
+                                </li>
+                                <li th:if="${ false }" class="nav-item">
+                                    <a th:classappend="${gubun_code == 'Fault'} ? active : _ " th:gubun_code="Fault" class="nav-link data_tab" href="#">
+                                        &nbsp;
+                                        <i class="fas fa-file-medical-alt h5"></i> &nbsp;
+                                        <p class="d-inline-block"> Fault Data File </p>
+                                    </a>
+                                </li>                                
+                            </ul>
+                        </div>
+
+                        <div class="table-responsive">
+
+                            <table class="table table-hover table-sm text-nowrap ">
+                                <colgroup>
+                                    <col width="100" />
+                                    <col width="" />
+                                    <col width="100" />
+                                    <col width="100" />
+                                </colgroup>
+
+                                <c:set var="showDate" value="${ false }"/>
+
+                                <thead class="text-center">
+                                    <tr class="bg-light text-primary">
+                                        <th>No.</th>
+                                        <th>
+                                            <i class="fa fa-file-contract"></i>&nbsp;&nbsp;파일</th>
+                                        <th th:if="${ showDate }" >
+                                            <i class="far fa-calendar-alt"></i> &nbsp; 날짜</th>
+                                        <th>
+                                            <i class="fas fa-download"></i>
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr th:each="item, i : ${ dbFiles }" 
+                                        th:file_id="${ item.fileId }" 
+                                        th:file_no="${ item.fileNo }" 
+                                        th:pair_file_no="${ item.getPairFileNo() }" 
+                                        class="db_file_row" style="cursor: pointer;"
+                                    >   
+                                        <td class="align-middle text-right">
+                                            <a th:href="@{/data/download_zip/__${ item.fileNo }__ }" href="#" >
+                                                <span th:text="${ #numbers.formatInteger( item.rowNumer, 0,'COMMA' ) }">1</span>
+                                            </a>
+                                            &nbsp;&nbsp;
+                                        </td>
+                                        <td class="align-middle">
+                                            <a th:href="@{/data/download_zip/__${ item.fileNo }__ }" href="#" >
+                                                <span th:text="${ item.fileName }">고장 데이터 파일명.txt</span>
+                                            </a>
+                                        </td>
+                                        <td th:if="${ showDate }" class="align-middle">
+                                            <a th:href="@{/data/download_zip/__${ item.fileNo }__ }" href="#" >
+                                                <span th:text="${ #dates.format( item.upDt, 'yyyy-MM-dd hh:mm:ss') }">
+                                                    2018-07-27 14:30:25
+                                                </span>
+                                            </a>
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <a th:href="@{/data/download_zip/__${ item.fileNo }__ }" href="#">
+                                                <button type="button" class="btn btn-sm btn-primary align-bottom">
+                                                    <i class="fas fa-download"></i>
+                                                </button>
+                                            </a>
+                                        </td> 
+                                    </tr>
+
+
+                                    <tr th:each="i: ${ dbFiles.getPageEmptyRowSequence( 10 ) }">
+                                        <td colspan="100%">&nbsp;</td>
+                                    </tr>
+                                </tbody>
+
+                                <tfoot>
+                                    <tr class="text-center">
+                                        <th class="text-center" colspan="100%">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item">
+                                                    <a class="page-link page-first" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li th:each="i : ${ dbFiles.getPageList( page ) }" class="page-item">
+                                                    <a th:text="${ #numbers.formatInteger( i + 1 , 0,'COMMA' ) }" class="page-link page-no" href="#">
+                                                        1
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link page-last" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+
+        <input th:value="${ param.page }" type="hidden" name="page" value="0" />
+        <input th:value="${ page.getTotalPages() }" type="hidden" id="pageLast" value="" />
+        <input th:value="${ gubun_code }" type="hidden" name="gubun_code" value="0" />
+
+    </form>
+
+    <footer th:replace="024_layout_footer.html" class="bg-dark text-center">
+
+        <div class="container py-3 text-center text-nowrap">
+            <div class="row text-nowrap">
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-home"></i>
+                        &nbsp; 소개
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        &nbsp; 제품소개</a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-user-secret"></i>
+                        &nbsp; 개인정보취급방침</a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-newspaper"></i>
+                        &nbsp; 게시판</a>
+                </div>
+                <div class="col">
+                    <a class="nav-link text-white" href="#">
+                        <i class="fas fa-sitemap"></i>
+                        &nbsp; 사이트맵</a>
+                </div>
+            </div>
+
+            <div class="row text-nowrap mt-2">
+                <div class="col small">
+                    <span>
+                        <i class="fas fa-phone"></i>&nbsp; 전화 : 042-253-7007 &nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <i class="fas fa-fax"></i>&nbsp; 팩스 : 042-253-7009 &nbsp;&nbsp;
+                    </span>
+                    <span>
+                        <i class="fas fa-envelope"></i>&nbsp; 메일 : procom@procom.co.kr &nbsp;&nbsp;
+                    </span>
+                    <p class="copyright mt-1"> ⓒ (주)프로컴시스템 All Rights Reserved. </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div th:replace="020_layout_common.html :: footer_include_01">
+        <script src="../rsc/jquery/jquery-3.3.1.min.js"></script>
+        <script src="../rsc/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    </div>
+
+    <script>
+        $(".db_file_row_old").click(
+            function () {
+                var file_no = $(this).attr( "file_no" );
+                window.location.href = "./download/" + encodeURI(file_no);
+
+                var pair_file_no = $(this).attr( "pair_file_no" );
+                if( null != pair_file_no && "" != pair_file_no ) {
+                    setTimeout(function(){ window.location.href = "./download/" + encodeURI( pair_file_no ); }, 3000);
+                }
+            }
+        );
+
+        $(".data_tab").click(
+            function () {
+                $("form input[name=gubun_code]").val($(this).attr("gubun_code"));
+
+                $("form input[name=page]").attr("name", "");
+                $("form").submit();
+            }
+        ); 
+
+        $( ".date_picker" ).datepicker({
+            format: "yyyy-mm-dd",
+            endDate: '+1d',
+            datesDisabled: '+1d',
+            language: "kr",
+            pickerPosition: "bottom right"
+        }); 
+    </script>
+
+</body>
+
+</html>

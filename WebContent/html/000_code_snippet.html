@@ -1,0 +1,50 @@
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+</html>
+
+@RequestParam("from") @DateTimeFormat(pattern="yyyy-MM-dd") Date fromDate) {
+
+@Id @GeneratedValue(strategy=GenerationType.IDENTITY) long id;
+
+@Column( length = 191 )
+
+th:href="@{/main/main.html}"
+
+th:classappend="${isAdmin} ? adminclass : userclass"
+
+<span th:text="${ #numbers.formatInteger( item.rowNumer, 0,'COMMA' ) }">1</span>
+
+<td th:text="${ #dates.format(sprint.releaseDate, 'dd-MMM-yyyy') }"></td>
+
+<td th:text="${ #dates.format(sprint.releaseDate, 'yyyy-MM-dd hh:mm:ss') }"></td>
+
+<a th:href="@{/order/{id}/details(id=3,action='show_all')}">
+
+<tr th:each="item, i : ${users}" class="article_row"  >
+
+<link id="bsdp-css" href="bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+<script src="bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="bootstrap-datepicker/js/locales/bootstrap-datepicker.kr.min.js" charset="UTF-8"></script>
+
+$('#sandbox-container input').datepicker({
+});    
+
+
+장치는 현재 ip는 192.168.1.203이고
+
+접속 계정은 root에 PW: root입니다
+
+ID : 1 048 437 651 PW : 1142 
+
+받는서버설정
+- 사용자 이름 : jschoi@procom.co.kr
+- 서버 유형 : POP3/IMAP
+- 서버 : wmbox3.ecounterp.com
+- 보안 : 자동 또는 TLS
+- 포트 : 110/143
+보내는 서버 설정
+- 서버 : wsmtp.ecounterp.com
+- 보안 : 자동 또는 TLS
+- 포트 : 587
+
+서버유형이 POP3일때 포트가 110, IMAP일때 143입니다.
