@@ -11,5 +11,12 @@
 	<ol>
 		<li th:each="task : ${tasks}" th:text="${task}"></li>
 	</ol>
+	
+	<select>
+		<option th:each="task : ${tasks}" 
+			th:text="${task + task}" th:value="${ task }" th:selected="${ task == 'b'}"
+		>A
+		</option>
+	</select>
 </body>
 </html>
