@@ -4,13 +4,24 @@
     <div class="container justify-content-center text-nowrap">
         <table style="width: 100%;">
                 <tbody>
-                    <tr> 
+                    <tr>
+                        <td class="align-middle">
+                            <a th:href="@{/main/main.html}" 
+                                class="text-muted" href="#" 
+                                title="홈페이지 메인 화면으로 이동합니다."
+                            >
+                                <h3>홈</h3>
+                            </a>
+                        </td>
                         <td>
                             <a th:href="@{/main/main.html}" class="text-muted" href="#">
-                                <p class="display-4 font-weight-bold d-inline-block mb-0 align-center pl-2" style="color:#083358">BBS</p>
+                                <p class="display-4 font-weight-bold d-inline-block mb-0 align-center pl-2" style="color:#083358">
+                                    게시판
+                                </p>
                             </a>
                             &nbsp;
                         </td>
+                        <td></td>  
                     </tr>
 
                 </tbody>
@@ -21,7 +32,105 @@
 
 <nav th:fragment="header_02" class="navbar fixed-top navbar-expand-lg bg-light p-0 pt-1" style="margin-top: 68px">
 
-    <div class="container justify-content-center text-center "> 
+    <div class="container justify-content-center text-center ">
+
+        <table class="justify-content-center text-center text-nowrap" style="vertical-align: center; margin-top: 8px;">
+            <colgroup>
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="100" />
+                <col width="" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td class="text-left">
+                        <h6 class="card-body p-0 m-0 text-dark" title="현재 시각" >
+                            <i class="far fa-clock"></i> &nbsp;
+                            <span th:text="${ #dates.format(#dates.createNow(),'YYYY-MM-dd HH:mm') }" >
+                                2018-07-25 14:25 
+                            </span>
+                            &nbsp;&nbsp;
+                        </h6>
+                    </td>
+
+                    <td>
+                        <h6 class="card-body p-0 m-0 text-dark" title="접속 건수" >
+                            <span th:if="0">
+                                <i class="far fa-user"></i> &nbsp;  
+                            
+                                전체 :&nbsp; 
+                                <span th:text="${ totConnUserNo.getValueFormat() }" >
+                                    1,234,567
+                                </span>
+                                &nbsp;명
+                                &nbsp;&nbsp;
+                                오늘 :
+                                <span th:text="${ todayConnUserNo.getValueFormat() }" >
+                                    1,234
+                                </span>
+                                &nbsp;명
+                                &nbsp;&nbsp;
+                            </span>
+                            <span th:if="1">
+                                <i class="far fa-user"></i> &nbsp;  
+                                현재 :
+                                <span th:text="${ #numbers.formatInteger( application.sessionCounter, 0,'COMMA' ) }" >
+                                    1,234
+                                </span>
+                                &nbsp;명
+                                &nbsp;&nbsp;
+                            </span>
+                        </h6>
+                    </td>  
+                    <td colspan="2" class="text-left">
+                        <h6 class="card-body p-0 m-0">
+                            <i class="far fa-bell "></i>
+                            &nbsp; 
+                            <a  
+                                class="text-muted" 
+                                href="#"
+                            >
+                                공지사항 :
+                                <span 
+                                    style="white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis; width: 100%; max-width: 320px; "
+                                >
+                                    홈페이지가 오픈되었습니다.
+                                </span>
+                            </a>
+                        </h6>
+                    </td>
+
+                    <td th:if="${ loginUser_id }" class="text-right">
+                        <a class="nav-link dropdown-toggle" href="#" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        >
+                            <i class="far fa-user" title="로그인 아이디"></i>&nbsp;
+                            <span th:text="${ loginUser_id }" title="클릭하면 상세 메뉴가 나타납니다." >
+                                접속 아이디
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" >
+                            <a th:href="@{/user/logout.html}" class="dropdown-item" href="#" >
+                                <i class="fa fa-arrow-alt-circle-right"></i> &nbsp;&nbsp; 로그 아웃
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a th:href="@{/user/info.html}" class="dropdown-item" href="#">
+                                <i class="fa fa-user-tag "></i> &nbsp; 사용자 정보
+                            </a>
+                            <div th:if="${ loginUser.isAdmin() }" class="dropdown-divider"></div>
+                            <a th:if="${ loginUser.isAdmin() }" th:href="@{/sys/setting.html}" class="dropdown-item" href="#">
+                                <i class="fa fa-bell "></i> &nbsp;&nbsp; 시스템 설정
+                            </a>
+                            <a th:if="${ loginUser.isAdmin() }" th:href="@{/user/manage.html}" class="dropdown-item" href="#">
+                                <i class="fa fa-user-friends "></i> &nbsp;&nbsp; 사용자 관리
+                            </a>                                    
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>    
 
 </nav>
