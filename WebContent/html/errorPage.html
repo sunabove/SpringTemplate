@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Error Page</title>
+</head>
+<body>
+
+	<h1>Error Page</h1>
+	<p>Application has encountered an error. Please contact support on ...</p>
+
+	<dl>
+		<dt>Failed URL:</dt>
+		<dd th:text="${ url }">url</dd>
+		<dt>Excpeption: </dt>
+		<dd th:text="${ exception.message }">message</dd>
+	</dl>
+	<ul>
+		<ol th:each="ste : ${ exception.stackTrace }" th:text="${ ste }">A
+		</ol>
+	</ul>
+
+</body>
+</html>
