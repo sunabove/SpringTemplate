@@ -23,116 +23,9 @@
 <body>
 
     <nav th:replace="022_layout_header.html :: header_01" class="navbar fixed-top navbar-expand-lg bg-primary text-center p-0 ">
-
-        <div class="container justify-content-center text-nowrap">
-            <div class="row">
-                <div class="col">
-                    <table style="width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td class="align-middle">
-                                    <a class="text-muted" href="#">
-                                        <img src="../rsc/psdr-custom/img/logo_001_procom.png" alt="logo">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a class="text-muted" href="#">
-                                        <p class="display-4 font-weight-bold d-inline-block mb-0 align-center pl-2" style="color:#083358">FDW</p>
-                                    </a>
-                                    &nbsp;
-                                </td>
-                                <td></td>
-
-                                <td class="text-left">
-                                    <img src="../rsc/psdr-custom/img/logo_002_psdr.png" alt="name_img" style="height: 20px;">
-                                    <br/>
-                                    <img src="../rsc/psdr-custom/img/logo_003_fdw.png" alt="name_img" style="height: 22px;">
-                                </td>
-                                <td>
-                                    &nbsp;
-                                    <a class="text-muted" href="#">
-                                        <img src="../rsc/psdr-custom/img/product.png" alt="product" style="height: 65px;">
-                                    </a>
-                                </td>
-
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-                </div>
-            </div>
-        </div>
-
     </nav>
 
     <nav th:replace="022_layout_header.html :: header_02" class="navbar fixed-top navbar-expand-lg bg-light p-0 pt-1 " style="margin-top: 68px">
-
-        <div class="container justify-content-center p-0">
-            <div class="row">
-                <div class="col">
-                    <table class="text-nowrap" style="vertical-align: center; margin-top: 8px;">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h5 class=" font-weight-bold text-primary p-0 m-0"> 경기지역본부 </h5>
-
-                                </td>
-                                <td>
-                                    <h5 class="card-title text-dark font-weight-bold p-0 mb-0">
-                                        &nbsp;성남전력지사 &nbsp;&nbsp;
-                                    </h5>
-                                </td>
-
-                                <td class="text-left">
-                                    <h6 class="card-body p-0 m-0 text-dark">
-                                        <i class="far fa-clock"></i> &nbsp;
-                                        <span>2018-07-25 14:25</span>
-                                    </h6>
-                                </td>
-                                <td class="text-left">
-                                    <h6 class="card-body p-0 m-0 text-dark">
-                                        <i class="far fa-user"></i> &nbsp; 접속자 :
-                                        <span>1,234</span>명
-                                    </h6>
-                                </td>
-                                <td class="text-left">
-                                    <h6 class="card-body p-0 m-0 text-dark">
-                                        <i class="fa fa-download"></i> &nbsp; 다운로드 :
-                                        <span>2,345</span>건
-                                    </h6>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" class="text-center">
-                                    <h3 class="card-title text-warning font-weight-bold mb-0 "> 154kV 중원 변전소 &nbsp;</h3>
-                                </td>
-                                <td colspan="2" class="text-left">
-                                    <h6 class="card-body p-0 m-0">
-                                        <i class="far fa-bell "></i>
-                                        &nbsp; 공지사항 :
-                                        <span>사용자 정보 보호 정책이 변경되었습니다.</span>
-                                    </h6>
-                                </td>
-                                <td class="text-right">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="far fa-user"></i>
-                                        <span>접속 아이디</span>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDd">
-                                        <a class="dropdown-item" href="#">로그 아웃</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">사용자 정보</a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-            </div>
-        </div>
-
     </nav>
 
     <main>
@@ -156,31 +49,21 @@
                     <div class="card p-2" style="overflow: hidden;">
 
                         <div class="form-group row px-2 pb-2 pt-0 ">
-                            <label class="col-12 col-form-label form-control-label text-primary  d-inline-block ">
-                                <i class="fas fa-dot-circle pr-2 text-primary d-inline-block"></i>
-                                <h3 class="d-inline-block">PSDR-NU/XU </h3>
-                                <div class="">
-                                    <img src="../rsc/psdr-custom/img/product_text.png" alt="product" class="" />
-                                </div>
-                            </label>
                             <label class="col-12 col-form-label form-control-label  d-inline-block mt-4">
                                 <i class="fas fa-dot-circle pr-2 text-primary d-inline-block"></i>
-                                <h3 class="d-inline-block text-primary ">PSDR-NU/XU 소개</h3>
+                                <h3 class="d-inline-block text-primary ">시스템 소개</h3>
 
                                 <p class="text-dark pt-4 ml-3">
                                     오늘날 전력에너지 수급에서 대두되는 문제는 양질의 전기를 안전하고 신뢰성 있게 사용자에게 공급하는 것입니다.
                                     <br> 따라서, 전기의 품질을 분석하고, 신뢰성을 저해하는 사고가 발생하였을 때 이를 신속하게 분석, 파악하여 원인을 찾을 수 있는 기능을 가진
                                     <br> 종합적인 전력분석 시스템이 절실히 요구되고있습니다.
-                                    <br> Power System Disturbance Recorder System-Time Synchronization(이하 : PSDR-XU)는 사고 데이터를
-                                    저장하는 데이터 로거(Logger)나,
-                                    <br>Fault-Recorder의기능을 기본으로 하며 그 기능은 아래와 같습니다.
                                 </p>
 
                                 <div class="pt-2 ml-3">
                                     <p class="text-dark d-inline-block mb-1 font">
 
                                         <p class="d-inline-block mb-0 font-weight-bold">
-                                            <span class="text-primary">01.</span>&nbsp;&nbsp; 다양한 저장조건을 제시(Level, Rate of Change, Power Swing, Event)</p>
+                                            <span class="text-primary">01.</span>&nbsp;&nbsp; 다양한 저장조건을 제시</p>
 
                                     </p>
                                     <p class="text-dark d-inline-block mb-1">
@@ -210,208 +93,7 @@
                                     </p>
                                 </div>
                             </label>
-                        </div>
-
-                        <div class="table_9682_ mx-2 pt-4">
-
-                            <h6 class="d-inline-block font-weight-bold">
-                                <i class="fas fa-dot-circle pr-2 d-inline-block"></i>데이터 취득
-                            </h6>
-                            <table class="table table-bordered ">
-                                <colgroup>
-                                    <col width="100">
-                                    <col width="200">
-
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td style="background-color:#ffffff;color:#000000;font-weight:bold;text-align:center;vertical-align:middle;">아날로그 채널 입력</td>
-                                        <td style="background-color:#ffffff;color:#000000;text-align:left;">
-                                            • 최대 64채널(전압, 전류, DC 가변가능)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 전압(정격 : 63.5/110V/190V/240V)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 측정범위
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;전압 : 0.1V~150V(±0.5%), 150V~ (±1.0%)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;전류 : 0.06A~50A(±1.0%), 50.0A~(±1.0%이상)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 영상전압(3상 전압 입력 시 내부연산 가능)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 전류(정격 : 5A or 1A)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 입력부담 : 1VA 미만
-                                            <br>
-                                            <br> • 특수사양
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- (DC전류 : 4 ~ 20mA)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- (DC전압 : -10V ~ +10V)
-                                            <br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="background-color:#ffffff;color:#000000;font-weight:bold;text-align:center;vertical-align:middle;">디지털 채널 입력</td>
-                                        <td style="background-color:#ffffff;color:#000000;text-align:left;vertical-align:middle;">
-                                            • 최대 128채널(가변가능)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- Dry접점(DC 24V)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- Wet접점(DC48V, DC125V)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 입력부담 : 1VA 미만
-                                            <br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="background-color:#ffffff;color:#000000;font-weight:bold;text-align:center;vertical-align:middle;">디지털 출력 채널</td>
-                                        <td style="background-color:#ffffff;color:#000000;text-align:left;vertical-align:middle;">
-                                            • 총 4채널
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 트리거 발생
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 프린터 에러
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 통신 에러
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 시스템에러
-                                            <br>
-                                            <br> • 릴레이 출력(A/B접점 선택)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 125VAC / 0.6A
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 110VDC / 0.6A
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 30VDC / 2.0A
-                                            <br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="background-color:#ffffff;color:#000000;font-weight:bold;text-align:center;vertical-align:middle;">데이터 샘플링</td>
-                                        <td style="background-color:#ffffff;color:#000000;text-align:left;vertical-align:middle;">
-                                            • 샘플링 주파수 : 7,680Hz(128개/Cycle)
-                                            <br>
-                                            <br> • A/D 해상도 : 20 비트(16비트 AD+4비트)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;(Switching방식)
-                                            <br>
-                                            <br> • 샘플링 방식 : 전채널 동시샘플링
-                                            <br>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="table_9690_ mx-2 pt-4">
-
-                            <h6 class="d-inline-block font-weight-bold">
-                                <i class="fas fa-dot-circle pr-2 d-inline-block"></i>측정대상 기동요소</h6>
-                            <table class="table table-bordered ">
-                                <colgroup>
-                                    <col width="100">
-                                    <col width="200">
-
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td style="background-color:#ffffff;color:#000000;font-weight:bold;text-align:center;vertical-align:middle;">측정요소</td>
-                                        <td style="background-color:#ffffff;color:#000000;text-align:left;vertical-align:middle;">
-                                            P, Q, V, f, I, δ(위상), PF</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="background-color:#ffffff;color:#000000;font-weight:bold;text-align:center;vertical-align:middle;">기동요소</td>
-                                        <td style="background-color:#ffffff;color:#000000;text-align:left;">
-                                            • 각 채널 별
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- Level 트리거
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- ROC트리거
-                                            <br>
-                                            <br> • 각 피더 별
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- P, Q 레벨트리거
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- P, Q ROC트리거
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- P, Q Swing트리거
-                                            <br>
-                                            <br> • 각 버스 별
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 주파수 Level 트리거
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 주파수 ROC트리거
-                                            <br>
-                                            <br> • Event 트리거
-                                            <br>
-                                            <br> • 메뉴얼 트리거
-                                            <br>
-                                            <br> • Remote 트리거
-                                            <br>
-                                            <br> • External 트리거
-                                            <br>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="table_9695_ mx-2 pt-4">
-                            <h6 class="d-inline-block font-weight-bold">
-                                <i class="fas fa-dot-circle pr-2 d-inline-block"></i>저장요소 및 저장매체</h6>
-                            <table class="table table-bordered ">
-                                <colgroup>
-                                    <col width="100">
-                                    <col width="200">
-
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td style="background-color:#ffffff;color:#000000;font-weight:bold;text-align:center;vertical-align:middle;">저장요소</td>
-                                        <td style="background-color:#ffffff;color:#000000;text-align:left;vertical-align:middle;">
-                                            • 트리거 데이터(확장자 : *.trgx)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- AI 64, DI 가변 채널의 매 샘플의 순시값
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(최대 사고 전 1초 , 사고 후 10초 저장)
-                                            <br>
-                                            <br> • 페이저 데이터(확장자 : *.phax)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- AI 64, DI 가변채널의 1회/주기 페이저 값
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(최대 사고 전 10초, 사고 후 20분 저장)
-                                            <br>
-                                            <br> • 로깅 데이터(확장자 : *.RDI)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 사용자가 선택한 데이터(PQVf,채널 페이저)를 최대 32개까지 로깅.
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 저장주기 : 최소1초, 사용자 임의의 시간으로 설정 가능
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 저장방법
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;연속저장(현재 시점에서 계속),
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1회 저장 (특정 시간 안에 1회 저장),
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;반복 저장(특정 구간을 반복해서 저장)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 파일의 크기를 고려해 저장시간이 1일을 넘을 때 현재까지 로깅한
-                                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;데이터를 저장하고 새로운 파일 생성, 저장.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="background-color:#ffffff;color:#000000;font-weight:bold;text-align:center;vertical-align:middle;">저장장치</td>
-                                        <td style="background-color:#ffffff;color:#000000;text-align:left;">
-                                            • CF MEMORY TYPE(32 GB 이상)
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;※ 출시년도에 따라 차이가 있을 수 있음
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="table_9708_ mx-2 pt-4">
-                            <h6 class="d-inline-block font-weight-bold">
-                                <i class="fas fa-dot-circle pr-2 d-inline-block"></i>화면표시/분석/재생 요소</h6>
-                            <table class="table table-bordered ">
-                                <colgroup>
-                                    <col width="100">
-                                    <col width="200">
-
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td style="background-color:#ffffff;color:#000000;font-weight:bold;text-align:center;vertical-align:middle;">감시모드</td>
-                                        <td style="background-color:#ffffff;color:#000000;text-align:left;vertical-align:middle;">
-                                            • 아날로그 채널 감시 모드
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 아날로그 전 채널 동시 표시
-                                            <br>
-                                            <br> • 디지털 채널 감시 모드
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 디지털 전 채널 동시 표시
-                                            <br>
-                                            <br> • PQVf 감시 모드
-                                            <br> &nbsp;&nbsp;&nbsp;&nbsp;- 선택 피더의 P, Q, V, f 표시
-                                            <br>
-                                            <br> • 선택 감시 모드
-                                            <br>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="background-color:#ffffff;color:#000000;font-weight:bold;text-align:center;vertical-align:middle;">재생모드</td>
-                                        <td style="background-color:#ffffff;color:#000000;text-align:left;">
-                                            • 전채널 순시/실효 값/주파수 재생
-                                            <br> • 선택채널 순시/실효 값/주파수 재생
-                                            <br> • 피더 별 유/무효 전력, Power Factor, 피상 전력 재생
-                                            <br> • 피더 별 벡터도 재생, 전압 전류 불평형률 재생
-                                            <br> • 피더 별 대칭성분 분석(전압/전류 3상)
-                                            <br> • 전채널 고조파 분석, 특정 고조파(0~9th) 재생, THD 재생
-                                            <br> • 고장점 표정
-                                            <br>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -420,54 +102,6 @@
     </main>
 
     <footer th:replace="024_layout_footer.html" class="bg-dark text-center">
-
-        <div class="container py-3 text-center text-nowrap">
-            <div class="row text-nowrap">
-                <div class="col">
-                    <a class="nav-link text-white" href="#">
-                        <i class="fas fa-home"></i>
-                        &nbsp; 소개
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="nav-link text-white" href="#">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                        &nbsp; 제품소개</a>
-                </div>
-                <div class="col">
-                    <a class="nav-link text-white" href="#">
-                        <i class="fas fa-user-secret"></i>
-                        &nbsp; 개인정보취급방침</a>
-                </div>
-                <div class="col">
-                    <a class="nav-link text-white" href="#">
-                        <i class="fas fa-newspaper"></i>
-                        &nbsp; 게시판</a>
-                </div>
-                <div class="col">
-                    <a class="nav-link text-white" href="#">
-                        <i class="fas fa-sitemap"></i>
-                        &nbsp; 사이트맵</a>
-                </div>
-            </div>
-
-            <div class="row text-nowrap mt-2">
-                <div class="col small">
-                    <span>
-                        <i class="fas fa-phone"></i>&nbsp; 전화 : 042-253-7007 &nbsp;&nbsp;
-                    </span>
-                    <span>
-                        <i class="fas fa-fax"></i>&nbsp; 팩스 : 042-253-7009 &nbsp;&nbsp;
-                    </span>
-                    <span>
-                        <i class="fas fa-envelope"></i>&nbsp; 메일 : procom@procom.co.kr &nbsp;&nbsp;
-                    </span>
-                    <p class="copyright mt-1"> ⓒ (주)프로컴시스템 All Rights Reserved. </p>
-                </div>
-            </div>
-
-        </div>
-
     </footer>
 
     <div th:replace="020_layout_common.html :: footer_include_01">
