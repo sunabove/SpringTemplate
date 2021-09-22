@@ -18,52 +18,14 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+
+    <script src="../rsc/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../rsc/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-    <nav th:replace="022_layout_header.html :: header_01" class="navbar fixed-top navbar-expand-lg bg-primary text-center p-0 ">
-
-        <div class="container justify-content-center text-nowrap">
-            <div class="row">
-                <div class="col">
-                    <table style="width: 100%;">
-                        <tbody>
-                            <tr>
-                                <td class="align-middle">
-                                    <a class="text-muted" href="#">
-                                        <img src="../rsc/psdr-custom/img/logo_001_procom.png" alt="logo">
-                                    </a>
-                                </td>
-                                <td>
-                                    <a class="text-muted" href="#">
-                                        <p class="display-4 font-weight-bold d-inline-block mb-0 align-center pl-2" style="color:#083358">FDW</p>
-                                    </a>
-                                    &nbsp;
-                                </td>
-                                <td></td>
-
-                                <td class="text-left">
-                                    <img src="../rsc/psdr-custom/img/logo_002_psdr.png" alt="name_img" style="height: 20px;">
-                                    <br/>
-                                    <img src="../rsc/psdr-custom/img/logo_003_fdw.png" alt="name_img" style="height: 22px;">
-                                </td>
-                                <td>
-                                    &nbsp;
-                                    <a class="text-muted" href="#">
-                                        <img src="../rsc/psdr-custom/img/product.png" alt="product" style="height: 65px;">
-                                    </a>
-                                </td>
-
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-                </div>
-            </div>
-        </div>
-
+    <nav th:replace="022_layout_header.html :: header_01" class="navbar fixed-top navbar-expand-lg bg-primary text-center p-0 "> 
     </nav>
 
     <nav th:replace="022_layout_header.html :: header_02" class="navbar fixed-top navbar-expand-lg bg-light p-0 pt-1 " style="margin-top: 68px">
@@ -93,14 +55,7 @@
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     본 개인정보 보호 정책은 당사의 웹사이트 서비스에서 제공하는 링크를 통해 액세스할 수 있는
                                     <br> 제3자 애플리케이션, 제품, 서비스, 웹사이트 또는 소셜 미디어 기능에는 적용되지 않습니다.
-                                    <br>
-                                    <br> 이러한 링크에 액세스할 경우, 당사의 웹사이트 서비스는 종료되며 제3자에서 귀하의 정보를 수집하거나 공유할 수 있습니다.
-                                    <br>FDW는 FDW의 개인정보 보호 정책과다를 수 있는 제3자 웹사이트 또는 관련 개인정보 보호 방침을 제어, 승인 또는 보증하지 않습니다.
-                                    <br>
-                                    <br> FDW는 귀하가 이용할 제3자 웹사이트에서 개인정보를 수집하고 사용하도록 허용하기 전에 해당 웹사이트의 개인정보 보호 정책을 검토하는 것을<br> 권장합니다.
-                                    <br>
-                                    <br> 우리는 귀하가 FDW에 등록할 수 있도록 하고 귀하가 요청한 당사의 웹사이트 및 앱 그리고 다른 제품 또는 서비스를 귀하에게 제공하기 위해
-                                    <br> 귀하의 개인 정보를 사용합니다.
+                                    <br> 
                                 </p>
 
                                 <p class="pt-4 font-weight-bold">1. 개인정보의 수집목적 및 이용</p> 
@@ -156,12 +111,7 @@
     <footer th:replace="024_layout_footer.html" class="bg-dark text-center"> 
     </footer>
 
-    <div th:replace="020_layout_common.html :: footer_include_01">
-        <!-- Bootstrap core JavaScript -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="../rsc/jquery/jquery-3.3.1.min.js"></script>
-
-        <script src="../rsc/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <div th:replace="020_layout_common.html :: footer_include_01"> 
     </div>
 
 </body>
