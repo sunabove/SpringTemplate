@@ -17,6 +17,9 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+        
+    <script src="../rsc/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../rsc/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -193,63 +196,10 @@
 
     </main>
 
-    <footer th:replace="024_layout_footer.html" class="bg-dark text-center">
-
-        <div class="container py-3 text-center text-nowrap">
-            <div class="row text-nowrap">
-                <div class="col">
-                    <a class="nav-link text-white" href="#">
-                        <i class="fas fa-home"></i>
-                        &nbsp; 소개
-                    </a>
-                </div>
-                <div class="col">
-                    <a class="nav-link text-white" href="#">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                        &nbsp; 제품소개</a>
-                </div>
-                <div class="col">
-                    <a class="nav-link text-white" href="#">
-                        <i class="fas fa-user-secret"></i>
-                        &nbsp; 개인정보취급방침</a>
-                </div>
-                <div class="col">
-                    <a class="nav-link text-white" href="#">
-                        <i class="fas fa-newspaper"></i>
-                        &nbsp; 게시판</a>
-                </div>
-                <div class="col">
-                    <a class="nav-link text-white" href="#">
-                        <i class="fas fa-sitemap"></i>
-                        &nbsp; 사이트맵</a>
-                </div>
-            </div>
-
-            <div class="row text-nowrap mt-2">
-                <div class="col small">
-                    <span>
-                        <i class="fas fa-phone"></i>&nbsp; 전화 : 042-253-7007 &nbsp;&nbsp;
-                    </span>
-                    <span>
-                        <i class="fas fa-fax"></i>&nbsp; 팩스 : 042-253-7009 &nbsp;&nbsp;
-                    </span>
-                    <span>
-                        <i class="fas fa-envelope"></i>&nbsp; 메일 : procom@procom.co.kr &nbsp;&nbsp;
-                    </span>
-                    <p class="copyright mt-1"> ⓒ (주)프로컴시스템 All Rights Reserved. </p>
-                </div>
-            </div>
-
-        </div>
-
+    <footer th:replace="024_layout_footer.html" class="bg-dark text-center"> 
     </footer>
 
     <div th:replace="020_layout_common.html :: footer_include_01">
-        <!-- Bootstrap core JavaScript -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="../rsc/jquery/jquery-3.3.1.min.js"></script>
-
-        <script src="../rsc/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
     </div>
 
     <script>
