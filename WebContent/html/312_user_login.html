@@ -42,59 +42,67 @@
 	<main>
 		<!-- content -->
 
-		<section class="container align-center" style=" margin-bottom: 70px;">
+		<section class="container" style="margin-top:60px; margin-bottom: 50px;">
 
-			<div class="row bg-info rouded">
-				<div class="col-12">
-					<a class="navbar-brand font-weight-bold text-dark " href="#">
-						<i class="fas fa-bars d-inline-block"></i>&nbsp;
-						<p class="m-0 pt-1  d-inline-block"> 로그인 </p>
-					</a>
+			<div class="container">
+				<div class="row bg-info rouded">
+					<div class="col-12">
+						<a class="navbar-brand font-weight-bold text-dark " href="#">
+							<i class="fas fa-bars d-inline-block"></i>&nbsp;
+							<p class="m-0 pt-1  d-inline-block"> 로그인 </p>
+						</a>
+					</div>
+				</div> 
+			
+				<div class="col-md-12 py-5 mb-4 ">
+					<div class="col-7 flex-nowrap justify-content-between align-items-center m-auto h-auto pb-2">
+						<div class="card flex-md-row mb-4 shadow-sm h-md-250 bg-light p-0">
+							<div class="card-body d-flex flex-column ">
+								
+								<form class=" p-3 py-4 " method="GET"> 
+									<div th:if="${ showLoginId }" class="form-group pb-3 text-primary">
+										&nbsp;
+										<i class="far fa-user"></i> &nbsp; 아이디 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+										<i class="far fa-envelope"></i> &nbsp; 이메일
+										<input th:value="${ #httpServletRequest.getParameter( 'user_id' ) }" th:classappend="${ login_error_msg } ? border-danger : _"
+											type="text" id="user_id" name="user_id" class="form-control mt-2" placeholder="아이디" />
+										<small class="form-text text-muted mt-2">
+											&nbsp;&nbsp;&nbsp;&nbsp;
+											<span th:text="${ login_error_msg }" id="user_id_error" class="text-danger">
+												아이디 또는 이메일 주소를 입력하세요.
+											</span>
+										</small>
+									</div>
+				
+									<div class="form-group pb-3">
+										<div class="text-primary">
+											&nbsp;
+											<i class="fas fa-key"></i> &nbsp; 암호
+										</div>
+										<input type="password" id="user_pass" name="user_pass" class="form-control mt-2" placeholder="암호" />
+										<small class="form-text text-muted mt-2">
+											&nbsp;&nbsp;&nbsp;&nbsp;
+											<span th:text="${ '' }" id="user_pass_error" class="text-danger">
+												비밀번호를 입력하세요.
+											</span>
+										</small>
+									</div>
+				
+									<div>
+										<br/> 
+									</div>
+				
+									<button type="submit" class="btn btn-primary btn-md btn-block align-center">
+										<i class="fas fa-check ml-2"></i> &nbsp; 로그인
+									</button>
+				
+								</form>
+			
+							</div>
+						</div>
+					</div>
 				</div>
 			</div> 
-			<br/> 
-
-			<div class="row align-center" >
-				<form class=" p-3 py-4 " method="GET">
-
-					<div th:if="${ showLoginId }" class="form-group pb-3 text-primary">
-						&nbsp;
-						<i class="far fa-user"></i> &nbsp; 아이디 &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
-						<i class="far fa-envelope"></i> &nbsp; 이메일
-						<input th:value="${ #httpServletRequest.getParameter( 'user_id' ) }" th:classappend="${ login_error_msg } ? border-danger : _"
-							type="text" id="user_id" name="user_id" class="form-control mt-2" placeholder="아이디" />
-						<small class="form-text text-muted mt-2">
-							&nbsp;&nbsp;&nbsp;&nbsp;
-							<span th:text="${ login_error_msg }" id="user_id_error" class="text-danger">
-								아이디 또는 이메일 주소를 입력하세요.
-							</span>
-						</small>
-					</div>
-
-					<div class="form-group pb-3">
-						<div class="text-primary">
-							&nbsp;
-							<i class="fas fa-key"></i> &nbsp; 암호
-						</div>
-						<input type="password" id="user_pass" name="user_pass" class="form-control mt-2" placeholder="암호" />
-						<small class="form-text text-muted mt-2">
-							&nbsp;&nbsp;&nbsp;&nbsp;
-							<span th:text="${ '' }" id="user_pass_error" class="text-danger">
-								비밀번호를 입력하세요.
-							</span>
-						</small>
-					</div>
-
-					<div>
-						<br/> 
-					</div>
-
-					<button type="submit" class="btn btn-primary btn-md btn-block align-center">
-						<i class="fas fa-check ml-2"></i> &nbsp; 로그인
-					</button>
-
-				</form>
-			</div>
 		</section>
 	</main>
 
