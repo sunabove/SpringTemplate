@@ -16,8 +16,8 @@
 		<dd th:text="${ exception.message }">message</dd>
 	</dl>
 	<ul>
-		<ol th:each="ste : ${ exception.stackTrace }" th:text="${ ste }">A
-		</ol>
+		<li th:each="ste : ${ exception.stackTrace }" th:text="${ ste }">A
+		</li>
 	</ul>
 
 </body>
